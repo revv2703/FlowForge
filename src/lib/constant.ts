@@ -83,3 +83,24 @@ export const products = [
     thumbnail: "/p3.png",
   },
 ]
+
+export const plans = [
+  {
+    title: "Hobby",
+    price: "$0",
+    features: ["3 free automations", "100 tasks per month", "2 step actions"],
+    description: `Get a glimpse of what our software is capable of. Just a heads up ${"you'll"} never leave us after this!`,
+  },
+  {
+    title: "Not Hobby",
+    price: "$19",
+    features: ["3 free automations", "100 tasks per month", "2 step actions"],
+    description: `Get a glimpse of what our software is capable of. Just a heads up ${"you'll"} never leave us after this!`,
+  },
+  {
+    title: "Definitely Not Hobby",
+    price: "$99",
+    features: ["3 free automations", "100 tasks per month", "2 step actions"],
+    description: `Get a glimpse of what our software is capable of. Just a heads up ${"you'll"} never leave us after this!`,
+  },
+]
