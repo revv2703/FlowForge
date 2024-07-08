@@ -45,7 +45,7 @@ export const AnimatedTooltip = ({ items }: { items: MenuItem[] }) => {
     <>
       {items.map((item) => (
         <div
-          className="relative group flex items-center cursor-pointer"
+          className="relative group flex items-center cursor-pointer -mb-2"
           key={item.id}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -53,7 +53,7 @@ export const AnimatedTooltip = ({ items }: { items: MenuItem[] }) => {
           <Link
             href={item.href}
             className={clsx(
-              'group h-10 w-10 flex items-center justify-center scale-[1] rounded-full p-[3px] cursor-pointer border-2 group-hover:scale-150 group-hover:z-30 border-white relative transition duration-500',
+              'group h-8 w-8 flex items-center justify-center scale-[1] rounded-full cursor-pointer border-1 group-hover:scale-150 group-hover:z-30 border-white relative transition duration-500',
               {
                 'dark:bg-[#2F006B] bg-[#EEE0FF]': pathName === item.href,
                 'bg-gray-200': pathName !== item.href,
