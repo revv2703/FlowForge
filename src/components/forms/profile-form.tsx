@@ -40,7 +40,7 @@ const ProfileForm = (props: Props) => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-lg">User's Full Name</FormLabel>
+              <FormLabel className="text-lg">User&apos;s Full Name</FormLabel>
               <FormControl>
                 <Input placeholder="Name" {...field} />
               </FormControl>
